@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import MemoriesPage from '../views/MemoriesPage';
-// import MemoryDetails from '../views/MemoryDetails';
+// import MemoryDetails from '../views/MemoryDetailsPage';
 
 
 
@@ -15,7 +15,11 @@ const routes = [
   },   
   {
     path: '/memories/:id',
-    component: () => import('@/views/MemoryDetails.vue')
+    component: () => import('@/views/MemoryDetailsPage.vue')
+  },
+  {
+    path: '/memories/add',
+    component: () => import('@/views/AddMemoryPage.vue')
   },
 
   
